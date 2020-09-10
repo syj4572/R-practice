@@ -7,19 +7,20 @@ if (grade == 1 | grade == 2 | grade == 3){
   cat(grade,"학년은 고학년입니다","\n")
 }
 
-#grade <- sample(1:6, 1)
-#if (grade >= 1 & grade <= 3){
-#  cat(grade,"학년은 저학년입니다")
-#}else{
-#  cat(grade,"학년은 고학년입니다",)
-#}
+# 다른 풀이
+grade <- sample(1:6, 1)
+if (grade >= 1 & grade <= 3){
+  cat(grade,"학년은 저학년입니다")
+}else{
+  cat(grade,"학년은 고학년입니다",)
+}
 
-#grade <- sample(1:6, 1)
-#if (grade >= 1 && grade <= 3){   #비교할게 한 개일때는 && 가능
-#  cat(grade,"학년은 저학년입니다")
-#}else{
-#  cat(grade,"학년은 고학년입니다",)
-#}
+grade <- sample(1:6, 1)
+if (grade >= 1 && grade <= 3){   #비교할게 한 개일때는 && 가능
+  cat(grade,"학년은 저학년입니다")
+}else{
+  cat(grade,"학년은 고학년입니다",)
+}
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   
