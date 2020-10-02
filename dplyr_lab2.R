@@ -16,6 +16,8 @@ str(mpg)
 nrow(mpg)
 ncol(mpg)
 
+dim(mpg)
+
 # 1-3
 
 mpg <- as.data.frame(ggplot2::mpg)
@@ -30,12 +32,14 @@ mpg
 
 # 1-5
 
-# GUI 환경?
+View(mpg)
 
 # 1-6
 
 mpg <- as.data.frame(ggplot2::mpg)
 mpg <- group_by(mpg) 
+
+summary(mpg)
 
 # 1-7
 
@@ -44,6 +48,10 @@ mpg <- as.data.frame(ggplot2::mpg)
 mpg <- mpg %>% select (manufacturer)
 
 table(mpg$manufacturer)
+
+mpg %>% 
+  group_by(manufacturer) %>% 
+  tally
 
 # 1-8
 
@@ -74,7 +82,7 @@ as.character(city)
 
 mpg %>% rename(mpg, cty=city) # rename 함수를 활용하려는데 에러
 
-
+mpg <- mpg %>% rename()
 
 # 2-2
 #highway <- mpg$hwy
